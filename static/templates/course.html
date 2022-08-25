@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Assignments{% endblock %}
+
+{% block content %}
+<div class="working_area">
+    <h1>Assignments</h1>
+
+    <form id="course" action="course" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit" class="button"/>
+    </form>
+</div>
+
+{% endblock %}

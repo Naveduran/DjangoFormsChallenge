@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <style>
+        body {
+            background-color: grey;
+        }
+        h1 {
+            color:white;
+            text-align: center;
+        }
+        .working_area {
+            border-style: solid;
+            border-color: white;
+            padding: 40px;
+            margin: 40px;
+        }
+        a {
+            width: 100%;
+        }
+        .button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            margin: 0% 35%;
+            max-width: 30%;
+            min-width: 30%;
+        }
+        label {
+            font-weight: bold;
+            color: white;
+        }
+        input {
+            display: block;
+            background-color: darkgrey;
+            margin: 15px;
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+        }
+        li {
+            font-size:x-small;
+        }
+
+    </style> 
+    <title>{% block title %}Test{% endblock %}</title>
+</head>
+
+<body>
+    {% block content %}{% endblock %}
+</body>
+</html>
